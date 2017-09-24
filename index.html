@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Pomodoro Clock</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <h1 class='text-center'>Work hard AND smart!</h1>
+<div class='well' id='clockBody'>
+  <div class='row'>
+    <div class='col-xs-6 text-center'>
+      <p>Work Time</p>
+      <div class='row'>
+        <div class='col-xs-8' id='workSettings'>
+          25
+        </div>
+        <div class='col-xs-4'>
+          <button id='plusWork' onclick='plusWork()'>+</button>
+          <button id='minusWork' onclick='minusWork()'>-</button>
+        </div>
+      </div>
+    </div>
+    <div class='col-xs-6 text-center'>
+      <p>Rest Time</p>
+      <div class='row'>
+        <div class='col-xs-8' id='restSettings'>
+          5
+        </div>
+        <div class='col-xs-4'>
+          <button id='plusRest' onclick='plusRest()'>+</button>
+          <button id='minusRest' onclick='minusRest()'>-</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <audio id='audio' src='https://upload.wikimedia.org/wikipedia/commons/d/d9/Wilhelm_Scream.ogg'></audio>
+  <div class='text-center' onclick="handeling();" style="cursor:pointer; margin-top: 85px; font-size: 250%; color: goldenrod">
+    <p id='curTime'>hh:mm:ss</p> <a><span></span></a>
+  </div>
+</div>
+<footer>
+    <i class="caption text-center myText" id="footer">Written and coded by <a href="https://codepen.io/TheR3apr/full/YNNmob/" title="Author's portfolio" target="_blank">Bogdan Stojiljkovic</a></i>
+  </footer>
+<!--<a href="https://upload.wikimedia.org/wikipedia/commons/d/d9/Wilhelm_Scream.ogg" class="internal" title="Wilhelm Scream.ogg">Wilhelm_Scream.ogg</a>-->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
